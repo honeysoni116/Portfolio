@@ -129,6 +129,7 @@
   border-block: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
+  border-radius: 0 0 50% 50% / 0 0 15% 15%;
 }
 
 .dates-wheel::-webkit-scrollbar {
