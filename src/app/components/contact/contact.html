@@ -1,0 +1,25 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" class="card">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/honey-soni11" target="_blank"><img src="assets/linkdin.svg" alt="LinkedIn" /></a>
+      <a href="#"><img src="assets/github.svg" alt="GitHub" /></a>
+    </div>
+
+    <label>Name</label>
+    <input [ngModel]="name()" (ngModelChange)="name.set($event)" name="name" placeholder="Your name" />
+
+    <label>Email</label>
+    <input [ngModel]="email()" (ngModelChange)="email.set($event)" name="email" type="email" placeholder="you@example.com" />
+    @if (email().length > 0 && !isEmailValid()) {
+      <span class="error-text">Email not correct</span>
+    }
+
+    <div class="label-group">
+      <label>Message</label>
+      <div class="counter">{{ message().length }} / 500</div>
+    </div>
+    <textarea [ngModel]="message()" (ngModelChange)="message.set($event)" name="message" rows="5" placeholder="Write your message..." maxlength="500"></textarea>
+
+    <button type="submit" [disabled]="!isValid()">Send Message</button>
+  </form>
+</div>

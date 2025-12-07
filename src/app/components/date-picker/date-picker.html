@@ -1,0 +1,55 @@
+<div class="card-container">
+  <div class="glass-panel">
+    <div class="inner-glow"></div>
+
+    <div style="padding-top: 24px; position: relative; z-index: 5">
+      <div class="tabs-wrapper">
+        <div class="tabs-box">
+          <p class="tab" [class.active]="activeTab === 'weekly'" (click)="setTab('weekly')">
+            Weekly
+          </p>
+          <p class="tab" [class.active]="activeTab === 'monthly'" (click)="setTab('monthly')">
+            Monthly
+          </p>
+        </div>
+
+        <div class="settings-btn">
+          <img src="assets/settings.svg" />
+        </div>
+      </div>
+
+      <div class="date-header">{{ monthNames[currentMonth] }} {{ selectedDate }}</div>
+
+      <div class="days">
+        <p *ngFor="let day of weekDays; let i = index" [class.active]="selectedWeekDay === i">
+          {{ day }}
+        </p>
+      </div>
+
+      <div class="dates-wheel">
+        <div class="dates">
+          <p
+            *ngFor="let d of daysInMonth"
+            [class.active]="selectedDate === d"
+            (click)="selectDate(d)"
+            id="date-{{ d }}"
+          >
+            {{ d }}
+          </p>
+        </div>
+      </div>
+
+      <div class="input-container">
+      <div class="input-box">
+        <img src="assets/note.svg" class="input-icon" />
+        <input type="text" placeholder="Add a note..." />
+      </div>
+
+      <div class="new-event">
+        <img src="assets/plus.svg" style="width: 16px; height: 16px;" />
+        <p style="margin: 0;">New Event</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

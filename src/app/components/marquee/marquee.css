@@ -1,0 +1,37 @@
+.marquee {
+  --gap: 20px;
+  display: flex;
+  gap: var(--gap);
+  padding: 10px 0;
+  overflow: hidden;
+  background: linear-gradient(90deg, #1a1a2e, #16213e);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  position: relative;
+  mask: linear-gradient(90deg, transparent, white 15%, white 85%, transparent);
+}
+.track {
+  display: flex;
+  gap: var(--gap);
+  animation: scroll 16s linear infinite;
+}
+.logo {
+  flex-shrink: 0;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s;
+}
+
+.logo img {
+  height: 70px;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - var(--gap) / 2));
+  }
+}
