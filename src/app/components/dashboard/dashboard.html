@@ -1,0 +1,99 @@
+<div class="dashboard-container">
+  <div class="sidebar">
+    <div class="logo-container">
+      <div class="logo-wrapper">
+        <div class="logo-icon">
+          <div class="logo-circle"></div>
+        </div>
+        <span class="logo-text">Ceremco</span>
+      </div>
+    </div>
+
+    <button class="nav-item" (click)="openSearch()" style="background: white">
+      <span class="material-icons icon">search</span>
+      <span class="nav-label">Search</span>
+    </button>
+
+    <nav class="nav-main">
+      <button
+        *ngFor="let item of navItems"
+        [class.active]="isActive(item.label)"
+        [class.nav-item]="true"
+        (click)="setActiveNav(item.label)"
+      >
+        <span class="material-icons icon">{{ item.icon }}</span>
+        <span class="nav-label">{{ item.label }}</span>
+      </button>
+    </nav>
+
+    <div class="nav-bottom">
+      <button *ngFor="let item of bottomNavItems" class="nav-item">
+        <span class="material-icons icon">{{ item.icon }}</span>
+        <span class="nav-label">{{ item.label }}</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="content-area">
+    <div class="content-wrapper">
+      <div class="overview-header">
+        <h1>Overview</h1>
+        <div class="header-actions">
+          <a routerLink="/" class="btn-secondary" style="text-decoration: none">
+            <span class="material-icons icon">arrow_back</span>
+            Back to Home
+          </a>
+          <button class="btn-secondary" (click)="onThisMonth()">
+            <span class="material-icons icon">calendar_month</span>
+            This Month
+          </button>
+          <button class="btn-secondary" (click)="onExport()">
+            <span class="material-icons icon">cloud_upload</span>
+            Export
+          </button>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <app-stat-card
+          title="Active Sales"
+          value="$32,029"
+          [changePercentage]="12"
+          [chartData]="[25, 30, 28, 40, 35, 50, 45, 55, 48]"
+        />
+
+        <app-stat-card
+          title="Product Revenue"
+          value="$12,637"
+          [changePercentage]="10"
+          [chartData]="[20, 25, 30, 28, 45, 50, 42, 48, 45]"
+        />
+
+        <app-stat-card
+          title="Product Sold"
+          value="1,902"
+          [changePercentage]="8"
+          [chartData]="[30, 35, 32, 40, 45, 50, 55, 48, 52]"
+        />
+      </div>
+
+      <div class="graph-wrapper">
+        <div style="width: 48.5rem">
+          <app-line-graph></app-line-graph>
+        </div>
+        <div style="width: 23.5rem">
+          <app-country-sales></app-country-sales>
+        </div>
+      </div>
+
+
+       <app-sales-table
+          [deals]="salesDeals"
+          (search)="onTableSearch($event)"
+          (filterClick)="onTableFilter()"
+          (exportClick)="onTableExport()"
+        >
+        </app-sales-table>
+    </div>
+  </div>
+</div>

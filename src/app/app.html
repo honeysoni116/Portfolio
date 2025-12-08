@@ -1,6 +1,8 @@
 <div class="background min-h-screen">
-  <div style="margin-bottom: 5rem;">
+  @if (isHeaderVisible()) {
+  <div style="margin-bottom: 5rem">
     <app-header></app-header>
   </div>
+  }
   <router-outlet></router-outlet>
 </div>

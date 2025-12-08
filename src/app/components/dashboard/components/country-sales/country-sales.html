@@ -1,0 +1,34 @@
+<div class="sales-card">
+  <div class="header">
+    <h3 class="title">Top 5 Country Sales Overview</h3>
+    <div class="total-sales">72.192</div>
+    <div class="growth">
+      <span class="arrow">↗</span>
+      <span class="percentage">12%</span>
+      <span class="vs-text">vs last month</span>
+    </div>
+  </div>
+
+  <div class="countries-list">
+    <div class="country-item" *ngFor="let country of countries">
+      <div class="country-name">{{ country.name }}</div>
+      <div class="bar-container">
+        <div class="bar-bg"></div>
+        <div 
+          class="bar-fill" 
+          [style.width.%]="country.percentage">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="x-axis">
+    <span>0</span>
+    <span>1k</span>
+    <span>2k</span>
+    <span>3k</span>
+    <span>6k</span>
+    <span>9k</span>
+    <span>12k</span>
+  </div>
+</div>

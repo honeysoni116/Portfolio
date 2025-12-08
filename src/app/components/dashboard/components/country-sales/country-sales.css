@@ -1,0 +1,108 @@
+.sales-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 420px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+}
+
+.total-sales {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.growth {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+.percentage {
+  color: #16a34a;
+}
+
+.vs-text {
+  color: #6b7280;
+}
+
+.countries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.country-name {
+  width: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  flex-shrink: 0;
+}
+
+.bar-container {
+  flex: 1;
+  height: 8px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%);
+  border-radius: 4px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.country-item:hover .bar-fill {
+  background: linear-gradient(90deg, #2563eb 0%, #3b82f6 100%);
+}
+.bar-fill[style*="width"] {
+  transform: scaleX(1) !important;
+}
+
+.x-axis {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #9ca3af;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+  user-select: none;
+}

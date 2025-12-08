@@ -4,6 +4,7 @@ import { About } from './components/about/about';
 import { Work } from './components/work/work';
 import { Contact } from './components/contact/contact';
 import { Comp } from './components/comp/comp';
+import { Dashboard } from './components/dashboard/dashboard';
 
 export const routes: Routes = [
     {
@@ -25,6 +26,11 @@ export const routes: Routes = [
     {
         path: 'components',
         component: Comp
+    },
+    {
+        path: 'dashboard',
+        component: Dashboard,
+        data: { isHeaderHide: true }
     },
     {
         path: '**',
