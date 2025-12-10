@@ -1,0 +1,102 @@
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  width: 60rem;
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  height: 500px;
+  width: 300px;
+  border-radius: 16px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  border-radius: 16px;
+  height: 284px;
+  width: 240px;
+  overflow: hidden;
+}
+
+.image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card h2 {
+}
+
+.card-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-text {
+  font-size: 16px;
+  color: #666;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.bio-section {
+}
+
+.title-block {
+}
+
+.title-main {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  font-size: 6rem;
+}
+
+.title-sub {
+  text-transform: uppercase;
+  color: #666;
+  margin: 0;
+  font-size: 5rem;
+}
+
+.description-block {
+}
+
+.description-text {
+  font-size: 20px;
+  color: #998f8f;
+  text-align: left;
+  width: 35rem;
+  line-height: 1.3;
+}
+
+.marquee-container {
+  width: 38rem;
+}

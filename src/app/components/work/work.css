@@ -38,7 +38,6 @@
   text-align: left; 
 }
 
-/* SAME GRADIENT POINTER */
 .exp-list li::before {
   content: "";
   position: absolute;
