@@ -11,13 +11,13 @@
 
   <div class="countries-list">
     <div class="country-item" *ngFor="let country of countries">
+      <div class="country-flag">
+        <img [src]="country.flagUrl" alt="{{ country.name }} flag" />
+      </div>
       <div class="country-name">{{ country.name }}</div>
       <div class="bar-container">
         <div class="bar-bg"></div>
-        <div 
-          class="bar-fill" 
-          [style.width.%]="country.percentage">
-        </div>
+        <div class="bar-fill" [style.width.%]="country.percentage"></div>
       </div>
     </div>
   </div>
