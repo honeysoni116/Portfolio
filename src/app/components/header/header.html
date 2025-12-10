@@ -8,5 +8,17 @@
       <li><a routerLink="/components" routerLinkActive="active">Components</a></li>
       <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
     </div>
-  <a href="https://github.com/honeysoni116/Portfolio" target="_blank"><img src="assets/github.svg" alt="GitHub" width="32" height="32" /></a>
+    <div class="actions">
+      <button (click)="toggleTheme()" class="icon-btn">
+        @if (themeService.theme() === 'light') {
+          🌙
+        } @else {
+          ☀️
+        }
+      </button>
+      <button (click)="toggleLang()" class="lang-btn">
+        {{ themeService.lang() === 'en' ? 'AR' : 'EN' }}
+      </button>
+      <a href="https://github.com/honeysoni116/Portfolio" target="_blank"><img src="assets/github.svg" alt="GitHub" width="32" height="32" /></a>
+    </div>
 </header>

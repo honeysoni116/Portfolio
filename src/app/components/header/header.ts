@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { ThemeService } from '../../services/theme.service';
 
 @Component({
   selector: 'app-header',
@@ -9,5 +10,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './header.css',
 })
 export class Header {
+  protected themeService = inject(ThemeService);
 
+  toggleTheme() {
+    this.themeService.toggleTheme();
+  }
+
+  toggleLang() {
+    this.themeService.toggleLang();
+  }
 }
