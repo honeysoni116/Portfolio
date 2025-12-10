@@ -46,15 +46,6 @@
   margin-bottom: 1rem;
 }
 
-.highlighted-title {
-  background: linear-gradient(90deg, #ff8a00, #e94057, #9d4edd, #00f2ff, #ff8a00);
-  background-size: 300% 300%;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  text-shadow: 0 0 40px #e94057, 0 0 80px #9d4edd, 0 0 120px #00f2ff;
-}
 
 @keyframes gradient-shift {
   0% {
