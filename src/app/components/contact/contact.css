@@ -31,7 +31,7 @@
 
 label {
   text-align: left;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   color: #444;
   font-size: 0.95rem;
 }
@@ -57,7 +57,7 @@ button {
   color: white;
   border: none;
   border-radius: 0.8rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
   transition: 0.3s;
   &:hover:not(:disabled) {

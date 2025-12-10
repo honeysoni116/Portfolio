@@ -39,7 +39,7 @@
 
 .project-name h2 {
   color: white;
-  font-size: 22px;
+  font-size: var(--text-xl);
   margin: 0;
 }
 
@@ -54,7 +54,7 @@
   padding-left: 22px;
   position: relative;
   color: #fff;
-  font-size: 18px;
+  font-size: var(--text-lg);
   text-align: justify;
 }
 

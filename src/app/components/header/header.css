@@ -5,7 +5,7 @@ a {
 
 .logo {
     color: #fafafa;
-    font-size: 1.5rem;
+    font-size: var(--text-2xl);
 }
 
 .header {
@@ -30,8 +30,8 @@ a {
 
 .nav-links a {
   color: #e0e0e0;
-  font-weight: 500;
-  font-size: 1.05rem;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--text-base);
   padding: 0.5rem 0;
   position: relative;
   transition: all 0.3s ease;

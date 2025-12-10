@@ -18,8 +18,8 @@
 }
 
 .card-title {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
   color: #6b7280;
   margin: 0;
 }
@@ -41,7 +41,7 @@
 
 .stat-value {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   color: #111827;
   margin: 0 0 8px 0;
   line-height: 1;
@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   color: #10b981;
 }
 
@@ -95,8 +95,8 @@
 .details-link {
   color: #6366f1;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
   transition: color 0.2s;
 }
 

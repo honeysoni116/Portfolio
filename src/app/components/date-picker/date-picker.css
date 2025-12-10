@@ -61,7 +61,7 @@
   padding: 8px 18px;
   border-radius: 8px;
   transition: 0.25s ease;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   width: 5rem;
   text-align: center;
 }
@@ -117,7 +117,7 @@
 .date-header {
   font-size: 3.5rem;
   color: white;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   text-align: center;
   margin-block: 1rem;
 }

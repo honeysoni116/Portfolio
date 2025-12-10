@@ -40,7 +40,7 @@
 
 .card-subtitle {
   text-align: center;
-  font-size: 16px;
+  font-size: var(--text-base);
   color: #666;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .info-text {
-  font-size: 16px;
+  font-size: var(--text-base);
   color: #666;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .description-text {
-  font-size: 20px;
+  font-size: var(--text-xl);
   color: #998f8f;
   text-align: left;
   width: 35rem;

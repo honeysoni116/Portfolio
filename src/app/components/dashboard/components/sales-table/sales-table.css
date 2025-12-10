@@ -9,8 +9,8 @@
 .title {
   margin: 0;
   padding: 20px 24px 0;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
   color: #1a1a1a;
 }
 
@@ -43,7 +43,7 @@
   padding: 10px 12px 10px 44px;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: var(--text-sm);
   outline: none;
   transition: border 0.2s;
 }
@@ -64,8 +64,8 @@
   gap: 8px;
   padding: 10px 16px;
   border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
   cursor: pointer;
   border: none;
   transition: all 0.2s;
@@ -103,7 +103,7 @@
   padding: 12px 24px;
   background: #fafafa;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   color: #555;
   border-bottom: 1px solid #eee;
 }
@@ -111,20 +111,20 @@
 .sales-table td {
   padding: 16px 24px;
   border-bottom: 1px solid #f0f0f0;
-  font-size: 14px;
+  font-size: var(--text-sm);
   color: #333;
 }
 
 .sort-icon {
   margin-left: 4px;
-  font-size: 12px;
+  font-size: var(--text-xs);
   color: #999;
 }
 
 .id {
-  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-family: var(--font-mono);
   color: #0066ff;
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 .initials .avatar {
@@ -136,7 +136,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   font-size: 13px;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .value {
-  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
   color: #000;
 }
 

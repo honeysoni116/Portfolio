@@ -36,7 +36,7 @@
 }
 
 .description {
-  font-size: 20px;
+  font-size: var(--text-xl);
   color: #998f8f;
   text-align: left;
   width: 35rem;

@@ -39,8 +39,8 @@
 }
 
 .logo-text {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
   color: #111827;
 }
 
@@ -62,8 +62,8 @@
   color: #6b7280;
   cursor: pointer;
   transition: all 0.2s;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
 }
 
 .nav-item:hover {
@@ -80,8 +80,8 @@
 }
 
 .nav-label {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
 }
 
 .nav-bottom {
@@ -117,13 +117,13 @@
 }
 
 .placeholder-text {
-  font-size: 18px;
+  font-size: var(--text-lg);
   color: #9ca3af;
   margin: 0;
 }
 
 .placeholder-subtext {
-  font-size: 14px;
+  font-size: var(--text-sm);
   color: #9ca3af;
   margin-top: 8px;
 }
@@ -152,8 +152,8 @@
 }
 
 .overview-header h1 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-bold);
   color: #111827;
   margin: 0;
 }
@@ -171,8 +171,8 @@
   background: white;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
   color: #374151;
   cursor: pointer;
   transition: all 0.2s;
