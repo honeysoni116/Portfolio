@@ -5,11 +5,12 @@ import { LineGraph } from '../line-graph/line-graph';
 import { CountrySales } from './components/country-sales/country-sales';
 import { RouterLink } from '@angular/router';
 import { SalesTable, SalesDeal } from './components/sales-table/sales-table';
+import { BarChart } from './components/bar-chart/bar-chart';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, StatCard, LineGraph, CountrySales, RouterLink, SalesTable],
+  imports: [CommonModule, StatCard, LineGraph, CountrySales, RouterLink, SalesTable, BarChart],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })

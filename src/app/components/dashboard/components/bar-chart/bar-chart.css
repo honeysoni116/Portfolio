@@ -1,0 +1,22 @@
+.chart-container {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  margin-bottom: 1rem;
+}
+
+.chart-header h3 {
+  margin: 0 0 32px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+.canvas-wrapper {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
