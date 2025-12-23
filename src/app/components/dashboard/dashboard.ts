@@ -6,11 +6,12 @@ import { CountrySales } from './components/country-sales/country-sales';
 import { RouterLink } from '@angular/router';
 import { SalesTable, SalesDeal } from './components/sales-table/sales-table';
 import { BarChart } from './components/bar-chart/bar-chart';
+import { DonutChart } from './components/donut-chart/donut-chart';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, StatCard, LineGraph, CountrySales, RouterLink, SalesTable, BarChart],
+  imports: [CommonModule, StatCard, LineGraph, CountrySales, RouterLink, SalesTable, BarChart, DonutChart],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })

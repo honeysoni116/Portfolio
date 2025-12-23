@@ -1,0 +1,60 @@
+<div class="card">
+  <div class="header">
+    <div class="title-wrapper">
+      <span class="icon">📍</span>
+      <h2 class="title">The most popular locations for EV charging station</h2>
+    </div>
+    <span class="unit">M, areas</span>
+  </div>
+
+  <div class="content">
+    <div class="total-section">
+      <p class="total-label">Total residential areas</p>
+      <h1 class="total-value">{{ totalAreas }} M</h1>
+    </div>
+
+    <div class="chart-container">
+      <svg viewBox="0 0 200 200" class="donut-chart">
+        <defs>
+          <filter id="shadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="2" result="offsetblur"/>
+            <feComponentTransfer>
+              <feFuncA type="linear" slope="0.3"/>
+            </feComponentTransfer>
+            <feMerge>
+              <feMergeNode/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <g *ngFor="let item of chartData; let i = index">
+          <path
+            [attr.d]="getArcPath(i)"
+            [attr.fill]="item.color"
+            [attr.filter]="i === 0 ? 'url(#shadow)' : null"
+            class="donut-segment"
+            [class.highlight]="i === 0"
+          />
+          <text 
+            [attr.x]="getLabelPosition(i).x" 
+            [attr.y]="getLabelPosition(i).y" 
+            text-anchor="middle" 
+            [attr.class]="i === 0 ? 'segment-label' : 'segment-label-small'">
+            {{ item.value }}
+          </text>
+        </g>
+      </svg>
+
+      <div class="legend">
+        <div 
+          *ngFor="let item of chartData" 
+          class="legend-item">
+          <span class="legend-color" [style.background-color]="item.color"></span>
+          <span class="legend-label">{{ item.label }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
