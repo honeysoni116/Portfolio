@@ -13,7 +13,6 @@
   width: 100%;
   max-width: 60rem;
   gap: 2rem;
-  overflow: hidden;
 }
 
 .card {
@@ -119,6 +118,13 @@
     gap: 3rem;
   }
 
+  .bio-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .title-main {
     font-size: 4rem;
   }
@@ -130,6 +136,7 @@
   .description-text {
     width: 100%;
     text-align: center;
+    margin: 1rem auto;
   }
 
   .marquee-container {
