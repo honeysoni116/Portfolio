@@ -74,10 +74,19 @@
 @media (max-width: 1024px) {
   .about-me-section {
     flex-direction: column;
-    width: 90%;
+    align-items: center;
+    text-align: center;
+    width: 95%;
   }
 
   .description {
-    width: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }

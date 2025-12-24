@@ -76,3 +76,19 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+@media (max-width: 1024px) {
+  .project {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .project-points li {
+    text-align: left;
+  }
+
+  .scroll-line {
+    display: none;
+  }
+}

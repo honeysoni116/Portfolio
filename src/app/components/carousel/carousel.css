@@ -58,3 +58,47 @@
   66%  { transform: rotateY(-240deg); }
   100% { transform: rotateY(-360deg); }
 }
+
+@media (max-width: 768px) {
+  .three-carousel {
+    width: 280px;
+    height: 380px;
+  }
+  
+  .card {
+    width: 220px;
+    height: 340px;
+  }
+  
+  .card:nth-child(1) {
+    transform: rotateY(0deg) translateZ(140px);
+  }
+  .card:nth-child(2) {
+    transform: rotateY(120deg) translateZ(140px);
+  }
+  .card:nth-child(3) {
+    transform: rotateY(240deg) translateZ(140px);
+  }
+}
+
+@media (max-width: 480px) {
+  .three-carousel {
+    width: 240px;
+    height: 320px;
+  }
+  
+  .card {
+    width: 180px;
+    height: 280px;
+  }
+  
+  .card:nth-child(1) {
+    transform: rotateY(0deg) translateZ(110px);
+  }
+  .card:nth-child(2) {
+    transform: rotateY(120deg) translateZ(110px);
+  }
+  .card:nth-child(3) {
+    transform: rotateY(240deg) translateZ(110px);
+  }
+}

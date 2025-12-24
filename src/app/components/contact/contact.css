@@ -89,3 +89,11 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    width: 90%;
+  }
+}
