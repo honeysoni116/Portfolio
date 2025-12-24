@@ -16,7 +16,7 @@
 }
 
 .card {
-  background: white;
+  background: var(--bg-secondary);
   height: 500px;
   width: 300px;
   border-radius: 16px;
@@ -24,6 +24,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-container {
@@ -45,7 +47,7 @@
 .card-subtitle {
   text-align: center;
   font-size: var(--text-base);
-  color: #666;
+  color: var(--text-secondary);
 }
 
 .info-group {
@@ -56,7 +58,7 @@
 
 .info-text {
   font-size: var(--text-base);
-  color: #666;
+  color: var(--text-secondary);
 }
 
 .social-links {
@@ -78,14 +80,14 @@
 
 .title-main {
   text-transform: uppercase;
-  color: #fff;
+  color: var(--text-primary);
   margin: 0;
   font-size: 6rem;
 }
 
 .title-sub {
   text-transform: uppercase;
-  color: #666;
+  color: var(--text-secondary);
   margin: 0;
   font-size: 5rem;
 }
@@ -95,7 +97,7 @@
 
 .description-text {
   font-size: var(--text-base);
-  color: #998f8f;
+  color: var(--text-muted);
   text-align: left;
   max-width: 35rem;
   width: 100%;

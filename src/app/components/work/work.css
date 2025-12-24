@@ -5,12 +5,12 @@
   text-align: center; 
   width: 70rem;
   margin: 0 auto;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .exp-subtitle {
   text-transform: uppercase;
-  color: #b7b7b7;
+  color: var(--text-secondary);
 }
 
 .exp-title {

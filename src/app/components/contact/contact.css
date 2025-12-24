@@ -4,15 +4,16 @@
 }
 
 .card {
-  background: white;
+  background: var(--bg-secondary);
   padding: 2.5rem 2rem;
   border-radius: 1.5rem;
   width: 100%;
   max-width: 400px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px var(--shadow-color);
   display: grid;
   gap: 1rem;
   text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social {
@@ -32,28 +33,30 @@
 label {
   text-align: left;
   font-weight: var(--font-weight-medium);
-  color: #444;
+  color: var(--text-primary);
   font-size: 0.95rem;
 }
 
 input,
 textarea {
   padding: 0.9rem;
-  border: 2px solid #e2e8f0;
+  border: 2px solid var(--border-color);
   border-radius: 0.8rem;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
   font: inherit;
   transition: 0.3s;
   &:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 4px #667eea30;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px var(--accent-color);
   }
 }
 
 button {
   margin-top: 0.5rem;
   padding: 1rem;
-  background: #667eea;
+  background: var(--accent-color);
   color: white;
   border: none;
   border-radius: 0.8rem;
@@ -61,11 +64,11 @@ button {
   cursor: pointer;
   transition: 0.3s;
   &:hover:not(:disabled) {
-    background: #5a67d8;
+    filter: brightness(1.1);
     transform: translateY(-2px);
   }
   &:disabled {
-    background: #94a3b8;
+    background: var(--text-muted);
     cursor: not-allowed;
   }
 }

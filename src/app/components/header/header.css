@@ -4,7 +4,7 @@ a {
 }
 
 .logo {
-    color: #fafafa;
+    color: var(--text-primary);
     font-size: var(--text-2xl);
 }
 
@@ -19,17 +19,17 @@ a {
 .nav-links {
   display: flex;
   gap: 2.5rem;
-  background: rgba(255, 255, 255, 0.1);  
+  background: var(--bg-glass);  
   padding: 0.9rem 2rem;
   border-radius: 50px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-glass);
+  box-shadow: 0 8px 32px var(--shadow-color);
 }
 
 .nav-links a {
-  color: #e0e0e0;
+  color: var(--text-secondary);
   font-weight: var(--font-weight-medium);
   font-size: var(--text-base);
   padding: 0.5rem 0;
@@ -38,13 +38,13 @@ a {
 }
 
 .nav-links li {
-    color: #fafafa;
+    color: var(--text-primary);
     list-style: none;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .nav-links a.active::after {
@@ -76,7 +76,7 @@ a {
 }
 
 github-link img {
-  filter: invert(1); /* Makes black SVG white */
+  filter: var(--github-filter, invert(1)); /* Use variable or default to white */
   transition: transform 0.3s ease;
 }
 
@@ -94,7 +94,7 @@ github-link img {
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
-  color: #fafafa;
+  color: var(--text-primary);
   padding: 0.5rem;
   border-radius: 50%;
   transition: background-color 0.2s;
@@ -106,13 +106,13 @@ github-link img {
 .lang-btn {
   font-size: 1rem;
   font-weight: bold;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--border-glass);
   border-radius: 8px;
   padding: 0.4rem 0.8rem;
 }
 
 .icon-btn:hover, .lang-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--bg-glass);
 }
 
 @media (max-width: 1024px) {
