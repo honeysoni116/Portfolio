@@ -1,3 +1,10 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .subtitle {
   text-transform: uppercase;
   color: #b7b7b7;

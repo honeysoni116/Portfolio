@@ -1,35 +1,39 @@
-<div style="border-radius: 10px; border: 1px solid #ccc; padding: 20px; background: #fff; margin-bottom: 2rem;">
-  <p style="font-size: 18px; font-weight: 500; margin: 0">Performance</p>
-  <h2 style="margin: 4px 0 12px 0; font-size: 32px; font-weight: 600">
+<div class="performance-card">
+  <p class="performance-title">Performance</p>
+
+  <h2 class="performance-amount">
     {{ totalAmount | currency }}
   </h2>
 
-  <div style="display: flex; justify-content: space-between; margin-bottom: 10px">
-    <p style="color: #6b7280">Real time updates</p>
+  <div class="performance-header">
+    <p class="performance-subtitle">Real time updates</p>
 
-    <div style="display: flex; gap: 2rem; font-size: 14px; color: #374151">
-      <p 
+    <div class="performance-legend">
+      <p
+        class="legend-item"
         (click)="selectView('this')"
-        [style.opacity]="(selectedView === 'all' || selectedView === 'this') ? 1 : 0.5"
-        style="display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none;">
-        <span style="width: 10px; height: 10px; background: #3b82f6; border-radius: 50%"></span>
+        [class.dimmed]="!(selectedView === 'all' || selectedView === 'this')"
+      >
+        <span class="legend-dot this-month"></span>
         This Month
       </p>
 
-      <p 
+      <p
+        class="legend-item"
         (click)="selectView('last')"
-        [style.opacity]="(selectedView === 'all' || selectedView === 'last') ? 1 : 0.5"
-        style="display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none;">
-        <span style="width: 10px; height: 10px; background: #93c5fd; border-radius: 50%"></span>
+        [class.dimmed]="!(selectedView === 'all' || selectedView === 'last')"
+      >
+        <span class="legend-dot last-month"></span>
         Last Month
       </p>
     </div>
   </div>
 
-  <canvas 
-    #canvas 
+  <canvas
+    #canvas
+    class="performance-canvas"
     (mousemove)="onMouseMove($event)"
     (mouseleave)="onMouseLeave()"
-    style="width: 100%; height: 450px; cursor: crosshair;">
+  >
   </canvas>
 </div>

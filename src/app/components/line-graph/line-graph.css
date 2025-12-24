@@ -1,6 +1,73 @@
-canvas {
+.performance-card {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 2rem;
+}
+
+.performance-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.performance-amount {
+  margin: 4px 0 12px 0;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.performance-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.performance-subtitle {
+  color: #6b7280;
+}
+
+.performance-legend {
+  display: flex;
+  gap: 2rem;
+  font-size: 14px;
+  color: #374151;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s ease;
+}
+
+.legend-item.dimmed {
+  opacity: 0.5;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.legend-dot.this-month {
+  background: #3b82f6;
+}
+
+.legend-dot.last-month {
+  background: #93c5fd;
+}
+
+.performance-canvas {
   width: 100% !important;
   height: 400px !important;
   background: #ffffff;
   border-radius: 12px;
+  cursor: crosshair;
 }
