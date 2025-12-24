@@ -1,72 +1,7 @@
 <div class="marquee">
   <div class="track">
-    <div class="logo">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-        alt="HTML5"
-      />
-    </div>
-    <div class="logo">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/250px-CSS3_logo_and_wordmark.svg.png"
-        alt="CSS3"
-      />
-    </div>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JS" />
-    </div>
-    <div class="logo">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Angular_gradient_logo.png/120px-Angular_gradient_logo.png?20231107180344"
-        alt="Angular"
-      />
-    </div>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
-    </div>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NestJS.svg/1242px-NestJS.svg.png?20221211225055" alt="NestJS" />
-    </div>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png?20170401104355" alt="NodeJS" />
-    </div>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png?20170429090805" alt="ExpressJS" />
-    </div>
-
-    <!-- Duplicate set (required for seamless loop)-->
-    <div class="logo">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-        alt="HTML5"
-      />
-    </div>
-    <div class="logo">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/250px-CSS3_logo_and_wordmark.svg.png"
-        alt="CSS3"
-      />
-    </div>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JS" />
-    </div>
-    <div class="logo">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Angular_gradient_logo.png/120px-Angular_gradient_logo.png?20231107180344"
-        alt="Angular"
-      />
-    </div>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" />
-    </div>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NestJS.svg/1242px-NestJS.svg.png?20221211225055" alt="NestJS" />
-    </div>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1180px-Node.js_logo.svg.png?20170401104355" alt="NodeJS" />
-    </div>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png?20170429090805" alt="ExpressJS" />
+    <div class="logo" *ngFor="let logo of logos">
+      <img [src]="logo.src" [alt]="logo.alt" />
     </div>
   </div>
 </div>
