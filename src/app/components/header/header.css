@@ -115,6 +115,23 @@ a {
   background-color: var(--bg-glass);
 }
 
+.resume-btn {
+  background: linear-gradient(90deg, #00d4ff, #7b00ff);
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: var(--text-base);
+}
+
+.resume-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
 .header-right {
   display: flex;
   align-items: center;
