@@ -14,7 +14,7 @@
 
     <div class="header-right">
       <div class="actions">
-        <button (click)="openResume()" class="resume-btn">Resume</button>
+        <a href="assets/resume.pdf" target="_blank" class="resume-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Resume</a>
         <button (click)="toggleTheme()" class="icon-btn">
           @if (themeService.theme() === 'light') {
             🌙

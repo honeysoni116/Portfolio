@@ -28,8 +28,4 @@ export class Header {
   closeMenu() {
     this.isMenuOpen.set(false);
   }
-
-  openResume() {
-    window.open('/assets/resume.pdf', '_blank');
-  }
 }
